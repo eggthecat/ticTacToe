@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Tic-tac-toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <div class="container">
+
+
+      <form class="form">
+      <h2>Players</h2>
+      <div class="switch-field">
+          <input type="radio" id="onePlayer" name="switch-one" value="yes" checked/>
+          <label for="radio-one">One Player</label>
+          <input type="radio" id="twoPlayer" name="switch-one" value="no" />
+          <label for="radio-two">Two Players</label>
+      </div>
+      <div class="jumbotron">
+        <div class="grid-container">
+          <button id="topLeft" type="submit" name="button" value="1">
+            <div class="grid-item">    </div>
+          </button>
+          <button id="topMid" type="button" name="button" value="2">
+            <div class="grid-item">2</div>
+          </button>
+          <button id="topRight" type="submit" name="button" value="3">
+            <div class="grid-item">3</div>
+          </button>
+          <button id="midLeft" type="button" name="button" value="4">
+            <div class="grid-item">4</div>
+          </button>
+          <button id="midMid" type="submit" name="button" value="5">
+            <div class="grid-item">5</div>
+          </button>
+          <button id="midRight" type="submit" name="button" value="6">
+            <div class="grid-item">6</div>
+          </button>
+          <button id="bottomLeft" type="submit" name="button" value="7">
+            <div class="grid-item">7</div>
+          </button>
+          <button id="bottomMid" type="submit" name="button" value="8">
+            <div class="grid-item">8</div>
+          </button>
+          <button id="bottomRight" type="submit" name="button" value="9">
+            <div class="grid-item">9</div>
+          </button>
+        </div>
+        <br>
+        <button id="resetBtn" type="submit" name="button">RESET</button>
+      </div>
+    </div>
+    <table>
+
+    </table>
+  </body>
+</html>
