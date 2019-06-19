@@ -22,7 +22,29 @@ header {
   display: flex;
   overflow: hidden;
 }
+
+#startBtn {
+  background-color: lightgreen;
+}
+
+#restartBtn {
+  background-color: pink;
+}
 /* .item1 {
   grid-column-start: 1;
   grid-column-end: 3;
 } */
+
+.red-background {
+  background-color: red;
+}
+
+table {
+  /* width: 100px;
+  height: 100px; */
+  padding: 0px;
+  margin: 0px;
+  width: 500px;
+  height: 100%;
+  table-layout: fixed;
+}
