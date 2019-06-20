@@ -20,26 +20,44 @@ Game.prototype.switch = function () {
   }
 }
 
+function Players(player1, player2, playTurn) {
+	this.player1 = 'x';
+	this.player2 = 'o';
+	this.playTurn = 'x';
+}
 
-Player.prototype.
+    //change player turn
+Players.prototype.changeTurn = function() {
+	if (this.playTurn === 'x') {
+		this.playTurn = 'o';
+    } else {
+		this.playTurn = 'x';
+    }
+}
+
+
+
+var plays2 = new Player( 'Thank you', 'Todd', 'o');
+
+
+
 // Game.prototype.winCheck = function () {
 //   if(n
 //
 // }
 
-var testPlayer = new Player("X");
-testPlayer.mark(); // returns "X"
+// testPlayer.mark(); // returns "X"
 
-var board = new Board();
-var testSpace = board.find(1, 2); // board.find(1,2) returns a Space object
-
-testSpace.xCoordinate(); // returns 1
-testSpace.yCoordinate(); // returns 2
-
-testSpace.mark(testPlayer);
-testSpace.markedBy(); // returns testPlayer or "X"
-
-board.gameOver()
+// var board = new Board();
+// var testSpace = board.find(1, 2); // board.find(1,2) returns a Space object
+//
+// testSpace.xCoordinate(); // returns 1
+// testSpace.yCoordinate(); // returns 2
+//
+// testSpace.mark(testPlayer);
+// testSpace.markedBy(); // returns testPlayer or "X"
+//
+// board.gameOver()
 
 Game.prototype.turnColor = function () {
 
@@ -48,7 +66,7 @@ Game.prototype.turnColor = function () {
   $(".grid-container").click(function() {
     $(".grid-item").addClass("blue-background");
   });
-}
+});
 
 
 
