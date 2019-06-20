@@ -39,6 +39,10 @@ header {
   background-color: red;
 }
 
+.blue-background {
+  background-color: lightblue;
+}
+
 table {
   /* width: 100px;
   height: 100px; */
