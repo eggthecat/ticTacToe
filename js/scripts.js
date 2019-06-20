@@ -41,6 +41,15 @@ testSpace.markedBy(); // returns testPlayer or "X"
 
 board.gameOver()
 
+Game.prototype.turnColor = function () {
+
+  $(".grid-container").click(function() {
+    $(".grid-item").addClass("red-background");
+  $(".grid-container").click(function() {
+    $(".grid-item").addClass("blue-background");
+  });
+}
+
 
 
 //UI logic
@@ -59,17 +68,11 @@ $(function() {
     });
 
     $("#topLeft").click(function() {
-      $(".grid-item").addClass("red-background");
+      $(".grid-item").turnColor();
     });
 
 
 
-    // $(player1).click(function() {
-    //   $(" ").addClass("Red-background");
-    // });
-    // $(player2).click(function() {
-    //   $(" ").addClass("Blue-background");
-    // });
     $("#restartBtn").click(function() {
       $(".grid-container").clear();
     });
